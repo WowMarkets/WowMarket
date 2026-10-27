@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista pública de estafadores | WoW Market</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">WoW Market</div>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="buscar.html">Buscar</a>
+          <a href="scammers.html">Estafadores</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Registro</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="dashboard-section">
+        <h2>Lista pública de estafadores</h2>
+        <p class="helper-text">
+          Esta lista se actualiza automáticamente cuando un administrador confirma un reporte.
+        </p>
+
+        <div id="scammerList" class="scammer-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 WoW Market Lich King</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/scammers.js"></script>
+    <script src="js/utils/loading.js"></script>
+  </body>
+</html>

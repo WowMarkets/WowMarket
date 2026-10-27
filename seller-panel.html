@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi panel</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">WoW Market</div>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="publish.html">Publicar</a>
+          <button id="logoutBtn" class="btn secondary small" type="button">Salir</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container dashboard-section">
+      <div class="dashboard-tabs">
+        <button class="tab-btn active" data-tab="profile" type="button">Perfil</button>
+        <button class="tab-btn" data-tab="credits" type="button">Créditos</button>
+        <button class="tab-btn" data-tab="promotions" type="button">Promociones</button>
+        <button class="tab-btn" data-tab="offers" type="button">Mis ofertas</button>
+      </div>
+
+      <div id="profile-panel" class="tab-panel active">
+        <div id="profileContent"></div>
+      </div>
+
+      <div id="credits-panel" class="tab-panel">
+        <div id="creditsContent"></div>
+      </div>
+
+      <div id="promotions-panel" class="tab-panel">
+        <div id="promotionsContent"></div>
+      </div>
+
+      <div id="offers-panel" class="tab-panel">
+        <div id="offersContent"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 WoW Market</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/logout.js"></script>
+
+    <script src="js/seller-panel-utils.js"></script>
+    <script src="js/seller-panel-profile.js"></script>
+    <script src="js/seller-panel-credits.js"></script>
+    <script src="js/seller-panel-promotions.js"></script>
+    <script src="js/seller-panel-offers.js"></script>
+    <script src="js/seller-panel.js"></script>
+    <script src="js/telegram.js"></script>
+    <script src="js/utils/loading.js"></script>
+  </body>
+</html>

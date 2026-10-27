@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reportar vendedor</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">WoW Market</div>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="buscar.html">Buscar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="form-box">
+        <h2>Reportar vendedor</h2>
+
+        <form id="reportForm" enctype="multipart/form-data">
+          <input type="hidden" id="sellerId" name="seller_id" />
+          <input type="hidden" id="listingId" name="listing_id" />
+
+          <input
+            type="text"
+            id="sellerName"
+            name="seller_name"
+            placeholder="Nombre del vendedor"
+            readonly
+            required
+          />
+
+          <input
+            type="text"
+            id="listingTitle"
+            name="listing_title"
+            placeholder="Título de la oferta"
+            readonly
+            required
+          />
+
+          <input
+            type="email"
+            id="buyerEmail"
+            name="buyer_email"
+            placeholder="Correo con el que te registraste en la plataforma"
+            required
+          />
+
+          <textarea
+            name="reason"
+            placeholder="Motivo del reporte"
+            required
+          ></textarea>
+
+          <textarea
+            name="description"
+            placeholder="Describe lo que ocurrió"
+            required
+          ></textarea>
+
+          <div>
+            <label>Foto 1 de evidencia</label>
+            <input type="file" name="photo1" accept="image/*" required />
+          </div>
+
+          <div>
+            <label>Foto 2 de evidencia</label>
+            <input type="file" name="photo2" accept="image/*" required />
+          </div>
+
+          <div>
+            <label>Foto 3 de evidencia</label>
+            <input type="file" name="photo3" accept="image/*" required />
+          </div>
+
+          <button type="submit" class="btn primary">Enviar denuncia</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/report.js"></script>
+    <script src="js/utils/loading.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperar cuenta</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">WoW Market</div>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="form-box">
+        <h2>Recuperar cuenta</h2>
+
+        <form id="recoverForm">
+          <input type="email" name="email" placeholder="Correo electrónico" required />
+          <input
+            type="password"
+            name="recovery_key"
+            placeholder="Tu palabra clave de recuperación"
+            required
+          />
+          <input
+            type="password"
+            name="new_password"
+            placeholder="Nueva contraseña"
+            required
+          />
+          <input
+            type="password"
+            name="confirm_password"
+            placeholder="Confirmar contraseña"
+            required
+          />
+
+          <button type="submit" class="btn primary">Cambiar contraseña</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/recover.js"></script>
+    <script src="js/utils/loading.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | WoW Market</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">WoW Market</div>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <button id="logoutBtn" class="btn secondary small" type="button">Salir</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container dashboard-section">
+      <div class="admin-panel">
+        <h2>Panel de administración</h2>
+
+        <div class="admin-section">
+          <h3>Usuarios registrados</h3>
+          <div id="userStats"></div>
+        </div>
+
+        <div class="admin-section">
+          <h3>Reportes pendientes</h3>
+          <div id="scamReportsList"></div>
+        </div>
+
+        <div class="admin-section">
+          <h3>Historial de reportes</h3>
+          <div id="scamReportsHistoryList"></div>
+        </div>
+
+        <div class="admin-section">
+          <h3>Pagos por oro</h3>
+          <div id="goldPaymentsList"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/telegram.js"></script>
+    <script src="js/utils/loading.js"></script>
+  </body>
+</html>
